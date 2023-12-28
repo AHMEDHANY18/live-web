@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/pages/program/style/Undergraduate-Programs.css">
+    <title>Undergraduate Programs</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            overflow-x: hidden;
+        }
+
+        header {
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            background-color: #34495e;
+            height: 75px;
+            padding: 0 20px;
+            color: #ecf0f1;
+
+        }
+
+        header a:hover, .active {
+            color: #fff;
+        }
+        header img {
+            width: 50px;
+            height: 50px;
+        }
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+        a{
+            text-decoration: none;
+        }
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            border-radius: 5px;
+            background-color: #6674b185;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+        header a :hover{    background-color: #f1f1f1;
+        }
+        .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+
+        .dropdown-content a:hover {
+            background-color: #f1f1f1;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+
+        .nav-item {
+            cursor: pointer;
+            color: #ecf0f1;
+            margin: 0 10px;
+            transition: color 0.3s;
+        }
+        .nav-item a{
+            cursor: pointer;
+            color: #ecf0f1;
+            margin: 0 10px;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        .nav-item a:hover{
+            display: inline-block;
+            text-decoration: none;
+            color: #ecf0f1;
+            border-radius: 5px;
+            background-color: #2c3e50;
+        }
+        .nav-item1:hover {
+            color: #94aab9;
+            border-radius: 50px;
+        }
+        a.nav-item1{
+            color: #ffffff;
+            background-color: rgba(16, 79, 174, 0.811);
+            padding: 6px 15px;
+            border-radius: 50px;
+        }
+        .nav-item1 :hover,
+        .nav-item1.active {
+            color: #ffffff;
+            background-color: rgba(16, 79, 174, 0.811);
+            padding: 6px 15px;
+            border-radius: 50px;
+        }
+
+        .parallax-container {
+            position: relative;
+            height: 500px;
+            background: url('/pages/program/assets/images/nathan-dumlao-ewGMqs2tmJI-unsplash\ -\ Copy.jpg') center/cover fixed;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: #000000;
+            animation: fadeInUp 1s ease-in-out;
+        }
+
+        .parallax-container h1 {
+            margin: 0;
+        }
+
+        .content {
+            padding: 20px;
+            animation: fadeInUp 1s ease-in-out;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            margin-top: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            background-color: #fff;
+            animation: fadeInUp 1s ease-in-out;
+        }
+
+        th,
+        td {
+            border: 1px solid #261c1c;
+            padding: 10px;
+            text-align: left;
+            animation: fadeInUp 1s ease-in-out;
+        }
+
+        th {
+            background-color: #352e2e54;
+            color: #ffffff;
+        }
+
+        tr:nth-child(even) {
+            background-color: #0000006c;
+        }
+
+        .pdf-link {
+            text-align: center;
+            margin-top: 20px;
+            animation: fadeInUp 1s ease-in-out;
+        }
+
+        .pdf-link a {
+            color: #007BFF;
+            font-weight: bold;
+            text-decoration: none;
+            border-bottom: 2px solid #007BFF;
+            transition: color 0.3s ease-in-out;
+        }
+
+        .pdf-link a:hover {
+            color: #0056b3;
+            border-bottom-color: #0056b3;
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+
+
+
+<body>
+    <header>
+        <a href="test.html"><img src="/pages/program/assets/images/logo-removebg-preview.png" alt="Logo"></a>
+        <a href="home-page.html" class="nav-item">Home</a>
+        <a href="Undergraduate-Programs.html" class="nav-item1" target="_blank">Undergraduate Programs</a>
+        <div class="nav-item dropdown">
+            <span class="dropbtn">About Us</span>
+            <div class="dropdown-content">
+                <a href="about_us_fit_profile.html" target="_blank">About Us Page</a>
+                <a href="contact.html" target="_parent">Contact Page</a>
+                <a href="Administration_staff_directory.html" target="_blank">Staff Page</a>
+            </div>
+        </div>
+        <a href="dorms.html" class="nav-item" target="_blank">Dorms</a>
+        <a href="lab.html" class="nav-item" target="_blank">Labs</a>
+        <a href="event_calendars.html" class="nav-item" target="_blank">Event Calendars</a>
+        <a href="pro web/1.html" class="nav-item" target="_blank">Login</a>
+
+    </header>
+    <div class="parallax-container">
+        <h1>Computer Science Courses</h1>
+    </div>
+
+    <div class="content">
+        <table>
+        <tr>
+            <th colspan="5">1000 Level Courses</th>
+        </tr>
+        <tr>
+            <th>Course Code</th>
+            <th>Description</th>
+            <th> fall semester <br><br>A</th>
+            <th>winter semester <br><br>B</th>
+            <th>Non-Regular <br>
+                sessionV/Z</th>
+        </tr>
+        <tr>
+            <td>cs1026</td>
+            <td>Computer Science Fundamentals I</td>
+            <td>1026A</td>
+            <td>1027A</td>
+            <td>1026B</td>
+        </tr>
+        <tr>
+            <td>cs1027</td>
+            <td>Computer Science Fundamentals II*</td>
+            <td>1032A</td>
+            <td>1033A</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>cs1032</td>
+            <td>Information Systems and Design</td>
+            <td>1032A</td>
+            <td>1033A</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>cs1033</td>
+            <td>Multimedia & Communication I*</td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>cs1028</td>
+            <td>Computer Science Fundamentals II*</td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>cs1037</td>
+            <td>Computer Science Fundamentals II*<br>Restricted to Engineering Students Only</td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <th colspan="5">2000 Level Courses</th>
+        </tr>
+        <tr>
+            <th>Course Code</th>
+            <th>Description</th>
+            <th>A</th>
+            <th>B</th>
+            <th>V/Z</th>
+        </tr>
+        <tr>
+            <td>cs2033</td>
+            <td>Multimedia & Communication II</td>
+            <td>2033E</td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>cs2044</td>
+            <td>Data Analytics: Principles and Tools</td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>cs2055</td>
+            <td>Dealing With Data: Analysis & Visualization</td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>cs2120</td>
+            <td>Computing & Informatics</td>
+            <td>2120A</td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>cs2121</td>
+            <td>Introduction to Computer Organization & Architecture</td>
+            <td>2121A</td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>cs2208</td>
+            <td>Applied Logic for Computer Science</td>
+            <td>2208A</td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>cs2209</td>
+            <td>Data Structures & Algorithms</td>
+            <td>2209A</td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>cs2210</td>
+            <td>Software Tools & Systems Programming</td>
+            <td>2210E</td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>cs2211</td>
+            <td>Introduction to Software Engineering*</td>
+            <td>2211E</td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>cs2214</td>
+            <td>Discrete Structures for Computing</td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+    </table>
+    <div class="pdf-link">
+        <p>You can view all courses in this PDF: <a href="/pages/program/brochure-KANTARA-IT-2021-1 (1).pdf" target="_blank" rel="noopener noreferrer">Download PDF</a></p>
+    </div>
+    </div>
+
+
+</body>
+
+</html>
